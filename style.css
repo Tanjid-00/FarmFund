@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+:root {
+  --pink: #ea3675;
+  --rose: #fff3f7;
+}
+/* Add your styles for the navbar and menu button here */
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  width: 120px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.menu-items li {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+}
+.menu-items li:first-child {
+  display: flex;
+  align-items: center;
+}
+.menu-items li:first-child p {
+  padding: 0 20px;
+}
+.menu-items li input {
+  margin: 0 15px;
+  width: 150px;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+.menu-items li:hover {
+  color: var(--pink);
+}
+
+.menu-items a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .menu-button {
+    display: block;
+  }
+
+  .menu-items {
+    background: white;
+    border-bottom: 1px solid black;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .menu-items li {
+    padding: 20px 10px;
+  }
+  .menu-items li:hover {
+    background: gainsboro;
+  }
+
+  .menu-items.active {
+    display: flex;
+  }
+}
+
+/* ------------------ Main    -------------------------- */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+/* ------------------  Section one   -------------------------- */
+
+.sec-one {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40px;
+  text-align: center;
+}
+.sec-one .left {
+  padding: 30px 0;
+}
+.sec-one .left p {
+  width: fit-content;
+}
+.sec-one .left h1 {
+  font-size: 50px;
+  margin: 30px 0;
+  font-family: poppins;
+  font-weight: 200;
+}
+.sec-one .left h1 span {
+  color: var(--pink);
+}
+.sec-one img {
+  width: 325px;
+  margin: 20px auto;
+}
+
+/* circles */
+.right {
+  position: relative;
+}
+.pink {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background: var(--pink);
+  border-radius: 50%;
+  z-index: -1;
+}
+.rose {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background: var(--rose);
+  border-radius: 50%;
+  z-index: -2;
+}
+@media (min-width: 600px) {
+  .sec-one {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sec-one .left h1 {
+    font-size: 90px;
+  }
+}
+
+/* ------------------     -------------------------- */
+/* ------------------     -------------------------- */
+/* ------------------     -------------------------- */
