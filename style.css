@@ -20,7 +20,7 @@ body {
   align-items: center;
   padding: 20px;
   background: white;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
 }
 
 .logo {
@@ -109,6 +109,10 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
+}
+.sec-one img {
+  max-width: 325px;
+  margin: 20px auto;
 }
 /* ------------------  Section one   -------------------------- */
 
